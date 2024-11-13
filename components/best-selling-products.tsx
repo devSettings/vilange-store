@@ -10,14 +10,14 @@ const BestSellingProducts = () => {
       name: 'Wireless Earbuds',
       price: 79.99,
       rating: 4.5,
-      image: '9_msnga4',
+      image: 'img-5_plim2d',
     },
     {
       id: 2,
       name: 'Smart Watch',
       price: 199.99,
       rating: 4.7,
-      image: '5_plim2d',
+      image: 'img-9_msnga4',
     },
     {
       id: 3,
@@ -35,8 +35,8 @@ const BestSellingProducts = () => {
     },
   ];
   return (
-    <section className='bg-slate-50 py-16'>
-      <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+    <section className='bg-gray-50 py-16'>
+      <div className='max-w-7xl mx-auto px-2 sm:px-6 lg:px-8'>
         <h2 className='text-3xl text-center lg:text-left font-extrabold text-black mb-8'>
           Best Selling Products
         </h2>
@@ -44,7 +44,7 @@ const BestSellingProducts = () => {
           {bestSellingProducts.map((product) => (
             <div
               key={product.id}
-              className='bg-white rounded-lg overflow-hidden'
+              className='bg-white shadow-sm rounded-lg overflow-hidden'
             >
               <div className='relative m-2  rounded-lg overflow-hidden'>
                 <Thumbnail
