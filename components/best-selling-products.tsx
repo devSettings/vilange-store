@@ -1,10 +1,6 @@
-import earbuds2 from '@/public/images/earbuds-2.jpg';
-import laptop from '@/public/images/laptop.jpg';
-import phone from '@/public/images/phone.jpg';
-import watch from '@/public/images/watch.jpg';
 import { Star } from 'lucide-react';
-import Image from 'next/image';
 import Link from 'next/link';
+import Thumbnail from './thumbnail';
 import { Button } from './ui/button';
 
 const BestSellingProducts = () => {
@@ -14,33 +10,33 @@ const BestSellingProducts = () => {
       name: 'Wireless Earbuds',
       price: 79.99,
       rating: 4.5,
-      image: earbuds2,
+      image: '9_msnga4',
     },
     {
       id: 2,
       name: 'Smart Watch',
       price: 199.99,
       rating: 4.7,
-      image: watch,
+      image: '5_plim2d',
     },
     {
       id: 3,
       name: 'Laptop Backpack',
       price: 59.99,
       rating: 4.3,
-      image: laptop,
+      image: 'aaa_oko56n',
     },
     {
       id: 4,
       name: 'Portable Charger',
       price: 39.99,
       rating: 4.6,
-      image: phone,
+      image: 'IMG_1080_iiayjx',
     },
   ];
   return (
     <section className='bg-slate-50 py-16'>
-      <div className='max-w-7xl mx-auto px-3 sm:px-6 lg:px-8'>
+      <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
         <h2 className='text-3xl text-center lg:text-left font-extrabold text-black mb-8'>
           Best Selling Products
         </h2>
@@ -50,13 +46,11 @@ const BestSellingProducts = () => {
               key={product.id}
               className='bg-white border-[0.1px] rounded-lg overflow-hidden'
             >
-              <div className='relative h-48 w-full p-2 overflow-hidden'>
-                <Image
-                  src={product.image}
-                  alt={product.name}
-                  layout='fill'
-                  objectFit='cover'
-                  className='transition-transform duration-300 group-hover:scale-110'
+              <div className='relative m-2 border rounded-lg overflow-hidden'>
+                <Thumbnail
+                  imgUrl={product.image}
+                  imgAlt={product.name}
+                  className='transition-transform  w-full duration-300 group-hover:scale-110'
                 />
               </div>
               <div className='p-4'>
@@ -72,7 +66,6 @@ const BestSellingProducts = () => {
                 </div>
                 <Button
                   variant='outline'
-                  size='sm'
                   className='w-full mt-4 shadow-none border-[0.1px] font-normal rounded-full'
                   asChild
                 >

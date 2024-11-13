@@ -20,7 +20,7 @@ export default function Hero() {
   }, [text]);
 
   return (
-    <div className='relative h-[85vh] flex items-center justify-center overflow-hidden  px-4 sm:px-6'>
+    <div className='relative h-[85vh] lg:h-screen flex items-center justify-center overflow-hidden  px-4 sm:px-6'>
       <div className='absolute inset-0 overflow-hidden pointer-events-none'>
         <div className='balloon-pattern absolute inset-0 opacity-5'></div>
       </div>
@@ -45,7 +45,7 @@ export default function Hero() {
         </motion.p>
 
         <motion.div
-          className='flex flex-col sm:flex-row w-full gap-4'
+          className='flex flex-col sm:flex-row w-full gap-4 lg:hidden'
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1, duration: 0.8 }}
