@@ -23,8 +23,9 @@ const CustomerReviews = () => {
                 ))}
               </div>
               <p className='text-gray-600 mb-4'>
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                &quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua.&quot;
               </p>
               <p className='font-semibold'>- Happy Customer</p>
             </div>

@@ -1,7 +1,4 @@
-import { Search, ShoppingCart, User, X } from 'lucide-react';
 import { HiOutlineMenuAlt4 } from 'react-icons/hi';
-import { FaBagShopping } from 'react-icons/fa6';
-import { Button } from './ui/button';
 
 const NavBar = () => {
   return (

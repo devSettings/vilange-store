@@ -1,12 +1,11 @@
-import Image from 'next/image';
-import { Button } from './ui/button';
-import Link from 'next/link';
-import { Star } from 'lucide-react';
-import earbuds from '@/public/images/earbuds.jpg';
 import earbuds2 from '@/public/images/earbuds-2.jpg';
+import laptop from '@/public/images/laptop.jpg';
 import phone from '@/public/images/phone.jpg';
 import watch from '@/public/images/watch.jpg';
-import laptop from '@/public/images/laptop.jpg';
+import { Star } from 'lucide-react';
+import Image from 'next/image';
+import Link from 'next/link';
+import { Button } from './ui/button';
 
 const BestSellingProducts = () => {
   const bestSellingProducts = [
