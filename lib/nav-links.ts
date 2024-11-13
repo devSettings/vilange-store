@@ -4,7 +4,6 @@ import {
   FileUser,
   GraduationCap,
   Home,
-  Newspaper,
 } from 'lucide-react';
 
 const navLinks = [

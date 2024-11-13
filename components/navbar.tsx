@@ -1,6 +1,5 @@
 'use client';
 
-// import logo_red from '@/app/assets/logo-red.png';
 import { HiOutlineMenuAlt4 } from 'react-icons/hi';
 
 import navLinks from '@/lib/nav-links';

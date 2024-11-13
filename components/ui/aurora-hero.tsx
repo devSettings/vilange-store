@@ -23,7 +23,7 @@ export function AuroraHero() {
       >
         <div className='text-3xl md:text-7xl font-bold dark:text-white text-left'>
           <motion.h1
-            className='text-5xl sm:text-4xl font-black space-y-2.5  md:text-5xl lg:text-9xl  lg:font-black mb-10 sm:mb-6 bg-clip-text bg-no-repeat text-transparent bg-gradient-to-r py-4 from-purple-500 via-violet-500 to-pink-500 [text-shadow:0_0_rgba(0,0,0,0.1)]  text-center '
+            className='text-5xl sm:text-4xl font-black space-y-2.5  md:text-5xl lg:text-9xl  lg:font-black mb-10 sm:mb-6 bg-clip-text bg-no-repeat text-transparent bg-gradient-to-r py-4 from-purple-500 via-violet-500 to-pink-500 [text-shadow:0_0_rgba(0,0,0,0.1)] animate-aurora text-center '
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
