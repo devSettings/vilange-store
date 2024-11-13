@@ -33,7 +33,7 @@ export default function Hero() {
         >
           <p>Your</p>
           <p>Shopping Cart</p>
-          <p className='text-[#ea580c] block'>Awaits</p>
+          <p className='text-muted-foreground block'>Awaits</p>
         </motion.h1>
         <motion.p
           className='text-lg sm:text-xl md:text-2xl text-muted-foreground mb-6 sm:mb-8 h-12 sm:h-auto'
@@ -56,11 +56,11 @@ export default function Hero() {
             href='#'
             className={cn(
               buttonVariants({ variant: 'outline' }),
-              'h-11 rounded-full justify-between shadow-none  border-[#ea580c]/40  text-gray-400 outline-none hover:bg-white hover:text-[#ea580c] bg-white border-[0.1px]'
+              'h-11 rounded-full justify-between shadow-none   text-muted-foreground outline-none hover:bg-white  bg-white border-[0.1px]'
             )}
           >
             <p>Search for items...</p>
-            <Search className=' text-[#ea580c]' />
+            <Search className='' />
           </Link>
 
           {/* <Link
