@@ -1,9 +1,8 @@
-import { Star } from 'lucide-react';
 import Link from 'next/link';
+import { MdShoppingCart } from 'react-icons/md';
+import Reviews from './review';
 import Thumbnail from './thumbnail';
 import { Button } from './ui/button';
-import Reviews from './review';
-import { MdShoppingCart } from 'react-icons/md';
 
 const BestSellingProducts = () => {
   const bestSellingProducts = [
