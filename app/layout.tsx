@@ -1,9 +1,10 @@
 import type { Metadata } from 'next';
 
-import './globals.css';
+import Footer from '@/components/footer';
+import NavBar from '@/components/navbar';
 import { cn } from '@/lib/utils';
 import { GeistSans } from 'geist/font/sans';
-import NavBar from '@/components/navbar';
+import './globals.css';
 
 export const metadata: Metadata = {
   title: 'Vilange Store',
@@ -25,6 +26,7 @@ export default function RootLayout({
       >
         <NavBar />
         <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );

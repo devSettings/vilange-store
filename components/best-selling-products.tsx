@@ -69,8 +69,7 @@ const BestSellingProducts = () => {
                 />
                 <Button
                   variant='outline'
-                  size='sm'
-                  className='w-full mt-6  bg-gray-50 text-black  shadow-none border-[0.1px] font-normal rounded-full'
+                  className='w-full mt-6  bg-black text-white  shadow-none border-[0.1px] font-normal rounded-full transition-colors  ease-in-out duration-300'
                   asChild
                 >
                   <Link href={`/product/${product.id}`}>

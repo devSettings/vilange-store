@@ -1,7 +1,7 @@
 'use client';
 
 import { HiOutlineMenuAlt4 } from 'react-icons/hi';
-
+import { BsBagDashFill } from 'react-icons/bs';
 import navLinks from '@/lib/nav-links';
 import { cn } from '@/lib/utils';
 import { AnimatePresence, motion } from 'framer-motion';
@@ -10,6 +10,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 import { Button } from './ui/button';
+import { FaSearch } from 'react-icons/fa';
 
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -21,7 +22,7 @@ const NavBar = () => {
       <header className='px-4 lg:px-6 h-16 flex items-center fixed w-full backdrop-blur bg-white/50 z-50 shadow-[rgba(7,_65,_210,_0.1)_0px_9px_30px] dark:bg-black'>
         <div className='container mx-auto flex justify-between items-center'>
           <Link
-            className='flex text-2xl font-bold items-center justify-center'
+            className='flex text-xl font-bold items-center justify-center'
             href='/'
           >
             Vilange Store
@@ -64,26 +65,31 @@ const NavBar = () => {
             </Button>
           </div>
 
-          <div className='flex items-center  md:hidden '>
-            <X
-              strokeWidth={1.5}
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className={cn(
-                'w-8 h-8 text-primary md:hidden  hover:text-primary hover:bg-red-50/50 rounded-md transition-all ease-linear duration-300',
-                { hidden: !isMenuOpen }
-              )}
-            />
+          <div className='flex items-center gap-x-4 text-zinc-800'>
+            <FaSearch size={20} />
 
-            <HiOutlineMenuAlt4
-              strokeWidth={1.5}
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className={cn(
-                'w-8 h-8 text-primary md:hidden  hover:text-primary hover:bg-red-50/50 rounded-md transition-all ease-linear duration-300',
-                {
-                  hidden: isMenuOpen,
-                }
-              )}
-            />
+            <BsBagDashFill size={20} />
+            <div className='flex items-center  md:hidden '>
+              <X
+                strokeWidth={1}
+                onClick={() => setIsMenuOpen(!isMenuOpen)}
+                className={cn(
+                  'w-8 h-8 text-primary md:hidden  hover:text-primary hover:bg-red-50/50 rounded-md transition-all ease-linear duration-300',
+                  { hidden: !isMenuOpen }
+                )}
+              />
+
+              <HiOutlineMenuAlt4
+                strokeWidth={1}
+                onClick={() => setIsMenuOpen(!isMenuOpen)}
+                className={cn(
+                  'w-8 h-8 text-primary md:hidden  hover:text-primary hover:bg-red-50/50 rounded-md transition-all ease-linear duration-300',
+                  {
+                    hidden: isMenuOpen,
+                  }
+                )}
+              />
+            </div>
           </div>
         </div>
       </header>
