@@ -40,13 +40,13 @@ const BestSellingProducts = () => {
         <h2 className='text-3xl text-center lg:text-left font-extrabold text-black mb-8'>
           Best Selling Products
         </h2>
-        <div className='grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-2'>
+        <div className='grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2 lg:gap-4'>
           {bestSellingProducts.map((product) => (
             <div
               key={product.id}
-              className='bg-white border-[0.1px] rounded-lg overflow-hidden'
+              className='bg-white rounded-lg overflow-hidden'
             >
-              <div className='relative m-2 border rounded-lg overflow-hidden'>
+              <div className='relative m-2  rounded-lg overflow-hidden'>
                 <Thumbnail
                   imgUrl={product.image}
                   imgAlt={product.name}
