@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 import { cn } from '@/lib/utils';
 import { GeistSans } from 'geist/font/sans';
+import NavBar from '@/components/navbar';
 
 export const metadata: Metadata = {
   title: 'Vilange Store',
@@ -18,11 +19,12 @@ export default function RootLayout({
     <html lang='en'>
       <body
         className={cn(
-          'min-h-screen bg-background font-sans antialiased',
+          'min-h-screen  font-sans antialiased',
           GeistSans.className
         )}
       >
-        {children}
+        <NavBar />
+        <main>{children}</main>
       </body>
     </html>
   );
