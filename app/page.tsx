@@ -9,7 +9,6 @@ const HomePage = () => {
   return (
     <section className=''>
       <AuroraHero />
-
       <BestSellingProducts />
       <TopCategories />
       <CallToAction />
