@@ -1,22 +1,26 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import electronics from '@/public/images/electronics.jpg';
+import fashion from '@/public/images/fashion.jpg';
+import home from '@/public/images/home.jpg';
+import sports from '@/public/images/sports.jpg';
 
 const topCategories = [
   {
     id: 1,
     name: 'Electronics',
-    image: '/placeholder.svg?height=300&width=400',
+    image: electronics,
   },
-  { id: 2, name: 'Fashion', image: '/placeholder.svg?height=300&width=400' },
+  { id: 2, name: 'Fashion', image: fashion },
   {
     id: 3,
     name: 'Home & Garden',
-    image: '/placeholder.svg?height=300&width=400',
+    image: home,
   },
   {
     id: 4,
     name: 'Sports & Outdoors',
-    image: '/placeholder.svg?height=300&width=400',
+    image: sports,
   },
 ];
 

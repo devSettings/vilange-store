@@ -43,9 +43,7 @@ export default function Hero() {
         >
           {text}
         </motion.p>
-        {/* <div className='h-16'>
-          <HomeDescriptionText />
-        </div> */}
+
         <motion.div
           className='flex flex-col sm:flex-row w-full gap-4'
           initial={{ opacity: 0, y: 20 }}
@@ -62,16 +60,6 @@ export default function Hero() {
             <p>Search for items...</p>
             <Search className='' />
           </Link>
-
-          {/* <Link
-            href='/store/products'
-            className={cn(
-              buttonVariants(),
-              'lg:hidden w-full h-11 sm:w-auto bg-gradient-to-r from-[#9a3412] to-[#ea580c] hover:from-[#ea580c] hover:to-[#9a3412] text-white font-bold py-3 px-8 rounded-full text-base sm:text-lg transition duration-300 ease-in-out transform hover:scale-105 shadow-md'
-            )}
-          >
-            Explore Now
-          </Link> */}
         </motion.div>
       </div>
     </div>
