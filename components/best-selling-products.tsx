@@ -44,7 +44,7 @@ const BestSellingProducts = () => {
           {bestSellingProducts.map((product) => (
             <div
               key={product.id}
-              className='bg-white shadow-sm rounded-lg overflow-hidden'
+              className='bg-white shadow-sm border border-gray-200 border-[0.1px] rounded-lg overflow-hidden'
             >
               <div className='relative m-2 rounded-lg overflow-hidden'>
                 <Thumbnail
@@ -54,10 +54,10 @@ const BestSellingProducts = () => {
                 />
               </div>
               <div className='p-4'>
-                <h3 className='text-base font-semibold text-[#9a3412] line-clamp-1'>
+                <h3 className='text-base font-semibold text-black line-clamp-1'>
                   {product.name}
                 </h3>
-                <p className='text-muted-foreground font-bold text-xl'>
+                <p className='text-muted-foreground font-bold text-2xl'>
                   ${product.price.toFixed(2)}
                 </p>
                 <div className='flex items-center mt-2'>

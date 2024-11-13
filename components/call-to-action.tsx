@@ -2,7 +2,7 @@ import { Button } from './ui/button';
 
 const CallToAction = () => {
   return (
-    <section className='bg-[#9a3412] py-16 mx-2 rounded-lg'>
+    <section className='bg-gradient-to-r from-purple-500 via-violet-500 to-pink-500  [text-shadow:0_0_rgba(0,0,0,0.1)] py-16 mx-2 rounded-lg'>
       <div className='max-w-7xl  md:mx-auto px-4 sm:px-6 lg:px-8 text-center'>
         <h2 className='text-3xl font-extrabold text-white mb-4'>
           Join Our Newsletter
